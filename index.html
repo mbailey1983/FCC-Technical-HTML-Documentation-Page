@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>FCC Technical Page</title>
+  
+  
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Abel'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Noto+Sans'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bai+Jamjuree'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Ubuntu+Mono'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <main id="main-doc">
+  <nav id="navbar">
+    <header>
+    <h1 class="nav-header">Welcome to HTML</h1>
+    </header>
+    <a class="nav-link" href="#Introduction_To_HTML">Introduction to HTML</a>
+    <a class="nav-link" href="#Setting_Up_A_Webpage">Setting Up A Webpage</a>
+    <a class="nav-link" href="#Fonts">Fonts</a>
+    <a class="nav-link" href="#Images">Images</a>
+    <a class="nav-link" href="#Conclusion_and_References">Conclusion and References</a>
+  </nav>
+  
+  <section class="main-section" id="Introduction_To_HTML">
+    <header>
+      <h1>Introduction to HTML</h1>
+    </header>
+    <p>"At its heart, HTML is a fairly simple language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. As HTML has evolved, it also has become more accessible to people with a variety of disabilities." <sub><a href="#intro">1</a></sub></p>
+    
+<p>HTML is a fairly easy programming language to learn. It doesn't require complex varibles and is actually very intuitive. This documentation will give you the basics to begin coding webpages in HTML. This will not be comprehensive but will get you started.</p>
+    <ul>
+      <li>HTML uses elements to mark sections of website content.</li>
+      <li>HTML elements are represented with tags</li>
+      <li>"HTML tags label pieces of content such as "heading", "paragraph", "table", and so on"</li>
+      <li>"Browsers do not display the HTML tags, but use them to render the content of the page"</li>
+    </ul>
+  </section>
+    <section class="main-section" id="Setting_Up_A_Webpage">
+    <header>
+      <h1>Setting Up A Webpage</h1>
+    </header>
+    <p>A webpage has to have a framework before you can begin adding content. The framework allows you to divide the webpage up into major sections, such as the page title, header, body, and footer. To see how this framework is set up on every webpage, take a look at the code below.</p>
+    
+<xmp>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<!-- Put your website content here -->
+
+</body>
+  </html>
+   </xmp>
+  
+      <p> Let's break this down. First, we have the <code>&#10094;!DOCTYPE html&#10095;</code> tag. This let's the browser know that the webpage is written in html. With all the new coding languages available for websites, such as javascipt, ruby, etc, it is vital to let the browser know what to expect. The main tag that defines a webpage is the <code>&#10094;html&#10095;</code> tag. This both opens and closes the page. Next, we have the <code>&#10094;head&#10095;</code> tag. This part of the website is different from the header. The <code>&#10094;head&#10095;</code> section contains important information about your website, such as the site title that will appear in the browser tab, any stylesheets or scripts that need to run on the website, and Facebook meta data. Visitors won't actually see this content, but it directly affects how your website looks and runs.</p>
+      
+      <p>After that, we have the <code>&#10094;body&#10095;</code> tag, which opens and closes the main website content. This is where your menu, copy, images, and other content will be added. Everything in this section of the website will be seen by your visitors. This will even include the footer section of your website. These tags are crucial to a functioning webpage. In fact, it is best to save this barebones template as a starting point for any coded webpage you build. <em>Please note that every tag in HTML, apart from a line break, must have a closing tag to be complete. You can see this in the above code where each tag is closed in this format:</em> <code>&#10094;&#47;body&#10095;</code>.</p>
+  </section>
+  <section class="main-section" id="Fonts">
+    <header>
+    <h1>Fonts</h1>
+    </header>
+    <p>A website is pretty bare without some text. In this section, you'll see the various tags used for adding text and images to your webpage.</p>
+    
+    <p>Text is added to webpages by using heading and paragraph tags. It can also take different tags to change the style of text, such as italics or bold. The list of options includes: 
+      <ul>
+        <li>Heading tags: sizes 1-6 with 1 being the largest</li>
+        <li>Paragraph tag: starts a new paragraph in baseline font</li>
+        <li>Decoration tags: allows for formatting text with italics, bold, underline, superscript, subscript, etc</li>
+    </ul></p>
+  <p> Let's see how this works in our code example from above.</p>
+    
+      <xmp>
+    <!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+  <h1>My Awesome Website</h1>
+  <p>Please read my website. I have such <em>valuable</em> information. 
+    This includes <b>ideas</b> and <u>tips</u>.</p>
+  <h3>What do you think?</h3>
+    
+
+</body>
+  </html>
+      </xmp>
+    
+<p>The above code renders like this on a live website: <br>
+  <div class="webrender">
+  <h1>My Awesome Website</h1>
+  <p>Please read my website. I have such <em>valuable</em> information. 
+    This includes <b>ideas</b> and <u>tips</u>.</p>
+  <h3>What do you think?</h3>
+  </div>
+  <p>Feel free to play around in a code playground to see how different font tags affect your text!</p>
+  </section>
+<section class="main-section" id="Images">
+  <header>
+    <h1>Images</h1>
+  </header>
+  <p>Images are equally important when creating a webpage. Images convey meaning, help develop your topic, and provide a shareable item in today's visual world. But, unlike text, which you can add directly into a webpage, images must be stored somewhere and pulled into your webpage using it's URL. Most webpages that are hosted will have storage for files, including images. Otherwise, for testing and learning, you can store any images in Dropbox or similar cloud service. The only requirement is to make sure you can get the direct image link that ends with the file type, like .jpg or .png, by right clicking the image and then clicking <kbd>Copy Image Address</kdb></p>
+  
+  <p>We are going to add an image to our existing webpage. This will use the tag <code>&#10094;img&#10095;</code>. However, it isn't enough to simply put that tag in. We also have to declare the source, abbreviated <samp>src</samp>, of the image. It is also highly recommended that you give the image an alternative name. The <samp>alt</samp> attribute gives both search engines and screen readers a text description of the image. Let's see an example of our webpage with the added image below.</p>
+    
+    <xmp>
+    <!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+  <h1>My Awesome Website</h1>
+  <img alt="screaming llama" src="https://www.dropbox.com/s/nk7prog3oxumx3z/5688248840_8f31d0acdf_b.jpg?dl=0">
+  <p>Please read my website. I have such <em>valuable</em> information. 
+    This includes <b>ideas</b> and <u>tips</u>.</p>
+  <h3>What do you think?</h3>
+    
+
+</body>
+  </html>
+      </xmp>
+    
+  <p>The above code renders like this on a live website: </p><br>
+  <div class="webrender">
+  <h1>My Awesome Website</h1>
+    <img alt="screaming llama" src="https://previews.dropbox.com/p/thumb/AAOb3Xk6GhLLKYPyEHYi8p08dGAfycJuH597dEL24rW-SAhorCKL8hj-WGA77NMD9hpH3nh2GZOS0nvkDlihKRXZ0y8SQGaN7Hoo4rxsviw7Y4mhiy2huq-CECC5j_L2HNKTHRFRafly7VDCoLxjNhxvlT_f0O4FmT9OdsB5IdSX4k3WW2SYoO99q9h7HAV216n_5NQUykKTJGCc2WLOwiN5LRLUuM8kAtBCrejsiQobWg/p.jpeg">
+  <p>Please read my website. I have such <em>valuable</em> information. 
+    This includes <b>ideas</b> and <u>tips</u>.</p>
+  <h3>What do you think?</h3>
+  </div>
+  <p>With the <code>&#10094;img&#10095;</code>, you can add images to your webpage.</p>
+  </section>
+  <section class="main-section" id="Conclusion_and_References">
+    <header>
+      <h1>Conclusion and References</h1>
+    </header>
+    <p>This documentation is very simple. There are many more tags, attributes, and more that can be used on a webpage. Also, this does not include styling that can be provided using CSS, or cascading style sheets. The majority of the colors, alignment, layout, and interactive elements in a webpage today are created using CSS. In fact, you can view HTML as the frame on the house and CSS as the way to paint the walls and add lights and carpet to the house.</p>
+    
+ <p>With sufficient practice of the above basic skills, you will be prepared to tackle more difficult HTML coding. Don't give up!</p>
+    <div class="refheader">
+      <h2>References for the Above Information</h2>
+    </div>
+    <ol>
+    <li id="intro"><a href="https://www.w3schools.com/html/html_intro.asp">Introduction to HTML by W3Schools</a></li>
+  
+  
+
+</body>
+
+</html>
